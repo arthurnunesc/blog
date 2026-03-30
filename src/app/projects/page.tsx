@@ -18,7 +18,7 @@ const projects: Project[] = [
       "Learn TailwindCSS by playing a minigame: there are eight CSS properties that you must translate to the equivalent TailwindCSS utility. Bet you can't get 8/8.",
     url: "https://css2wind.com",
     imageUrl: "/projects/css2wind.png",
-    githubUrl: "https://github.com/LukeberryPi/css2wind",
+    githubUrl: "https://github.com/arthurnunesc/css2wind",
     technologies: (
       <div className="flex items-center gap-x-3">
         <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
@@ -39,7 +39,7 @@ const projects: Project[] = [
       "A simpler way to visualize the movies in the Everyman in the Canal 2025 in London. I watched Mean Girls and it was amazing.",
     url: "https://kings-cross-cinema-schedule-2025.vercel.app/",
     imageUrl: "/projects/cinema-schedule.png",
-    githubUrl: "https://github.com/LukeberryPi/kings-cross-cinema-website",
+    githubUrl: "https://github.com/arthurnunesc/kings-cross-cinema-website",
     technologies: (
       <div className="flex items-center gap-x-3">
         <span className="rounded-full bg-[#FF5D01] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-inherit dark:ring-1 dark:ring-zinc-500">
@@ -60,7 +60,7 @@ const projects: Project[] = [
       "Stop procrastinating by dealing with five tasks at a time. If you want to add more tasks you need to resolve a previous one. Surprisingly effective.",
     url: "https://phived.com",
     imageUrl: "/projects/phived.png",
-    githubUrl: "https://github.com/LukeberryPi/phived",
+    githubUrl: "https://github.com/arthurnunesc/phived",
     technologies: (
       <div className="flex items-center gap-x-3">
         <span className="rounded-full bg-[#00D8FE] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit dark:ring-1 dark:ring-zinc-500">
