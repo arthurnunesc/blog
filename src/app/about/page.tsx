@@ -6,82 +6,42 @@ export default function AboutPage() {
       </h1>
       <article>
         <p>
-          I was born in São Paulo and moved to{" "}
-          <a href="https://en.wikipedia.org/wiki/Florian%C3%B3polis">
-            Florianópolis
-          </a>{" "}
-          as a 10 year old kid. I fell in love with the nature, sport and music
-          culture of the Magical Island.
+          I&apos;m a Brazilian software engineer based in Barcelona, Spain. I
+          work on the Data Collection team at Centric Software, where I build
+          and maintain web scraping pipelines across thousands of retail and
+          fashion websites, feeding data into pricing intelligence, trend
+          forecasting, and competitor monitoring products.
         </p>
         <p>
-          In the next decade, I{" "}
-          <a href="https://open.spotify.com/artist/4ymHKBTThfeOL114lwCWPQ?si=c30897c35e404259">
-            became a singer-songwriter
-          </a>
-          , got a Karate blue belt, won two Carnaval trophies and reached Diamond IV in League of Legends.
+          I learned to code at{" "}
+          <a href="https://42barcelona.com">42 Barcelona</a>, which shaped how
+          I approach problems: hands-on, collaborative, and always digging into
+          how things actually work.
         </p>
         <p>
-          Then I studied Economics at{" "}
-          <a href="https://en.wikipedia.org/wiki/Federal_University_of_Santa_Catarina">
-            Federal University of Santa Catarina
-          </a>
-          , mostly for my love for History and Math. I learned a lot of
-          Politics, Statistics and Macroeconomics.
+          At Centric, I own scrapers end to end — from building new ones to
+          maintaining and optimizing existing pipelines. I&apos;ve brought
+          multiple spiders&apos; running costs down from hundreds of dollars to
+          under $10 by rethinking proxy strategies and request flows, and
+          achieved 10x+ speed improvements on several spiders.
         </p>
         <p>
-          But I&apos;d spent too long studying models that weren&apos;t
-          applicable in real-life. I felt disconnected from my studies which led
-          to me dropping out after 2 years.
+          I deal with anti-bot challenges daily, finding the right balance
+          between reliability, speed, and cost — whether through Scrapy, API
+          reverse engineering, or headless solutions.
         </p>
         <p>
-          Then came my first contact with programming: as a Data Analyst at a
-          Tech startup. We used Microsoft Excel and Power BI to generate our
-          reports.
+          I am AI-curious and like to keep up with the news. I use it daily,
+          either at work or on my personal projects.
         </p>
         <p>
-          With millions of data entries, it wasn&apos;t long until my Dell
-          notebook became unusably slow. This led me to learn Python and Pandas
-          to better deal with datasets, as well as Selenium and pyautogui.
+          Send me an email at{" "}
+          <a href="mailto:arthurnunesc@proton.me">arthurnunesc@proton.me</a>.
         </p>
-        <p>
-          I&apos;ve always been obsessed with user interfaces. My friends
-          couldn&apos;t bear me pointing out broken buttons and ugly websites
-          all the time.
-        </p>
-        <p>
-          When I found out what HTML was, I did a deep dive into the Frontend. I
-          completed FreeCodeCamp&apos;s{" "}
-          <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">
-            Responsive Web Design
-          </a>{" "}
-          and swiftly progressed to Javascript and React soon after.
-        </p>
-        <p>
-          I became more active within the Brazilian Dev community, sharing
-          quirky UI bugs and building my projects in public such as{" "}
-          <a href="https://phived.com">phived</a> and{" "}
-          <a href="https://css2wind.com">css2wind</a>. I collaborated with
-          hundreds of developers and contributed a lot to Open Source.
-        </p>
-        <p>
-          In 2024, I traveled to Torino, Italy to visit my dad. My life flipped
-          upside down and I ended up living in Málaga for a while. After I{" "}
-          <a href="/articles/how-not-to-get-a-job-in-spain">
-            failed to get a job
-          </a>
-          , I moved to the UK and landed a job in London, where I currently
-          live.
-        </p>
-        <p>
-          Send me a DM on{" "}
-          <a href="https://x.com/lukeberrypi">X</a> or an email{" "}
-          <a href="mailto:lukeberrypi@gmail.com">lukeberrypi@gmail.com</a>.
-        </p>
-        <p>Smile, you&apos;re alive :)</p>
         <p>
           Best,
           <br />
-          Luke
+          Arthur
         </p>
       </article>
     </>
