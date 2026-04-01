@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Karla } from "next/font/google";
+import { Fira_Sans } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import { ScrollToTop } from "../components/scroll-to-top";
@@ -12,10 +12,7 @@ export const metadata: Metadata = {
   description: "Arthur Nunes' personal website",
 };
 
-const karla = Karla({
-  subsets: ["latin"],
-  weight: "400",
-});
+const firaSans = Fira_Sans({ subsets: ["latin"], weight: ["400"] });
 
 // https://www.reddit.com/r/nextjs/comments/1bhfikg/comment/kxwj9ou/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 const Header = dynamic(() => import("./Header"), { ssr: false });
@@ -51,7 +48,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${karla.className} min-h-full px-6`}>
+      <body className={`${firaSans.className} min-h-full px-6`}>
         {/*<Analytics />*/}
         <Header />
         <main className="mx-auto max-w-prose pb-4">
