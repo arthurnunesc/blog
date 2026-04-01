@@ -11,7 +11,7 @@ export default function AboutPage() {
           I now have deep roots here and work at
           Centric Software building web scrapers for fashion and retail sites.<br></br>
           I also studied at {" "}
-          <a href="https://42barcelona.com">42 Barcelona</a>: <a href="https://www.lavanguardia.com/vida/20230629/9071363/asi-42-campus-barcelona-unico-mundo-mejor-decision-mi-vida-brl.html" target="_blank">see if you can find me in this article</a>(spoiler: it's hard).
+          <a href="https://42barcelona.com">42 Barcelona</a>: <a href="https://www.lavanguardia.com/vida/20230629/9071363/asi-42-campus-barcelona-unico-mundo-mejor-decision-mi-vida-brl.html" target="_blank">see if you can find me in this article</a>(spoiler: it&apos;s hard).
         </p>
         <p>
           I like to ride my bike and I was a Strava local legend on a segment
@@ -19,7 +19,7 @@ export default function AboutPage() {
           At some point I got tired of routing apps
           having wrong surface data, so I started working on <b>Gravel Sync</b>
           , a mobile app for updating OpenStreetMap road conditions while
-          you&apos;re out riding. <b>It's not out yet</b>.
+          you&apos;re out riding. <b>It&apos;s not out yet</b>.
         </p>
         <p>
           I also run a small homelab at home.<br></br>
