@@ -54,7 +54,13 @@ export default function Header() {
             <ChevronLeft strokeWidth={1.4} />
           </div>
           <div className="flex flex-col max-sm:items-center">
-            Arthur Nunes
+            <span className="flex items-center gap-2">
+              Arthur Nunes
+              <span className="inline-flex items-center gap-1 rounded-full bg-green-100 px-2 py-0.5 text-xs text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
+                <span className="size-2 animate-pulse rounded-full bg-green-500 dark:bg-emerald-500" />
+                Online
+              </span>
+            </span>
             <span className="text-zinc-500 dark:text-zinc-400">
               Web Crawling Engineer
             </span>
