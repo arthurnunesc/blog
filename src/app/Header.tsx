@@ -78,18 +78,14 @@ export default function Header() {
               />
             )}
           </button>
-          <Link
+          <a
             className="group relative rounded px-2 py-px sm:hover:ring-1 ring-sky-500 transition-transform dark:ring-sky-600"
-            href="/projects"
+            href="https://github.com/arthurnunesc"
+            target="_blank"
             aria-label="View projects"
-            aria-current={path === "/projects" ? "page" : undefined}
           >
             /projects
-            <Triangle
-              aria-hidden="true"
-              className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-aria-[current=page]:block dark:fill-sky-600 dark:text-transparent"
-            />
-          </Link>
+          </a>
           <Link
             className="group relative rounded px-2 py-px sm:hover:ring-1 ring-sky-500 transition-transform dark:ring-sky-600"
             href="/articles"
