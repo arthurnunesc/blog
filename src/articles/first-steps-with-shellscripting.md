@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title><![CDATA[Arthur Nunes Blog]]></title>
-        <description><![CDATA[This is my blog]]></description>
-        <link>http://localhost:3000</link>
-        <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 01 Apr 2026 20:29:44 GMT</lastBuildDate>
-        <atom:link href="http://localhost:3000/rss.xml" rel="self" type="application/rss+xml"/>
-        <language><![CDATA[en]]></language>
-        <item>
-            <title><![CDATA[First steps with ShellScripting]]></title>
-            <description><![CDATA[
+---
+title: "First steps with ShellScripting"
+date: "2020-08-26"
+tags:
+  - linux
+  - bash
+  - scripting
+  - learning
+location: ""
+---
+
 As most of you - don't - know, I've been a loyal Linux user for pretty much a year by now and I love it, it helps me stay productive and I've always been an open-source lover.
 Also, I have the not-so-healthy habit of formatting my computer almost weekly, with Windows that was a pain, but in Linux I can write a script to do everything I need for me. I do not recommend you to do that to your PC that frequently, but I can't help myself. So, with the goal of saving me some hours every week, I proceeded to write it, in this post I'll explain what I learned in my first week of studying.
 
@@ -63,14 +62,3 @@ In contrast, for bash I found a lot less content, but because of the objectivity
 I had a great time learning to write ShellScript and I feel revigorated after writing different code for a while, sometimes a simple change for a week or two can help you a lot!
 
 #### Thank you for reading!
-
-You can find me on [Twitter](https://twitter.com/arthurnunesc) and on [GitHub](https://github.com/arthurnunesc) (The script I talked about is there).
-
-This post is a repost of an old article of mine written in 2020-08-26.
-]]></description>
-            <link>http://localhost:3000/articles/first-steps-with-shellscripting</link>
-            <guid isPermaLink="true">http://localhost:3000/articles/first-steps-with-shellscripting</guid>
-            <pubDate>Wed, 26 Aug 2020 00:00:00 GMT</pubDate>
-        </item>
-    </channel>
-</rss>
