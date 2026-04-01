@@ -7,7 +7,7 @@ export default function AboutPage() {
       <article>
         <p>
           I was born and raised in <a href="https://en.wikipedia.org/wiki/Fortaleza">Fortaleza</a>, Brazil.<br></br>
-          Dropped out of college at 20 to come to <a href="https://en.wikipedia.org/wiki/Barcelona">Barcelona</a> and found work as a dev before finding a university that wanted to accept me.<br></br>
+          Then I dropped out of college at age 20 to come to <a href="https://en.wikipedia.org/wiki/Barcelona">Barcelona</a> and was able to find work as a dev before finding a university that wanted to accept me.<br></br>
           I now have deep roots here and work at
           Centric Software building web scrapers for fashion and retail sites.<br></br>
           I also studied at {" "}
