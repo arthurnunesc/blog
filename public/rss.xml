@@ -4,7 +4,7 @@
         <description><![CDATA[This is my blog]]></description>
         <link>http://localhost:3000</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 01 Apr 2026 20:29:44 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Apr 2026 20:36:41 GMT</lastBuildDate>
         <atom:link href="http://localhost:3000/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
@@ -62,12 +62,7 @@ In contrast, for bash I found a lot less content, but because of the objectivity
 
 I had a great time learning to write ShellScript and I feel revigorated after writing different code for a while, sometimes a simple change for a week or two can help you a lot!
 
-#### Thank you for reading!
-
-You can find me on [Twitter](https://twitter.com/arthurnunesc) and on [GitHub](https://github.com/arthurnunesc) (The script I talked about is there).
-
-This post is a repost of an old article of mine written in 2020-08-26.
-]]></description>
+#### Thank you for reading!]]></description>
             <link>http://localhost:3000/articles/first-steps-with-shellscripting</link>
             <guid isPermaLink="true">http://localhost:3000/articles/first-steps-with-shellscripting</guid>
             <pubDate>Wed, 26 Aug 2020 00:00:00 GMT</pubDate>
