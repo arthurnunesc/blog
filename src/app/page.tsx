@@ -1,6 +1,7 @@
 import {
   SiGithub,
   SiLinkedin,
+  SiX,
 } from "@icons-pack/react-simple-icons";
 import { ArrowUpRight, Download, Send } from "lucide-react";
 import Link from "next/link";
@@ -17,15 +18,21 @@ interface Link {
 const externalLinks: Link[] = [
   {
     name: "LinkedIn",
-    description: "follow my career",
+    description: "see what I've been up to",
     url: "https://linkedin.com/in/arthurnunesc",
     icon: <SiLinkedin className="fill-[#0077B5] dark:fill-zinc-200" />,
   },
   {
     name: "GitHub",
-    description: "steal my code",
+    description: "judge my commits",
     url: "https://github.com/arthurnunesc",
     icon: <SiGithub />,
+  },
+  {
+    name: "X (Twitter)",
+    description: "read my hot takes",
+    url: "https://x.com/arthurnunesc",
+    icon: <SiX className="fill-zinc-950 dark:fill-zinc-200" />,
   },
 ];
 
@@ -55,10 +62,9 @@ export default function HomePage() {
   return (
     <div className="flex flex-col gap-6">
       <p className="text-sm">
-        Brazilian software engineer based in Barcelona, working on the Data
-        Collection team at Centric Software. I build and maintain web scraping
-        pipelines across thousands of retail and fashion websites. I learned to
-        code at 42 Barcelona and I am AI-curious.
+        Brazilian software engineer based in Barcelona. I work on the Data
+        Collection team at Centric Software, building and maintaining
+        fashion web scrapers. Studied at 42 Barcelona.
       </p>
       <div className="divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-400 dark:divide-zinc-500 dark:ring-zinc-500">
         {externalLinks.map((link: Link) => (
