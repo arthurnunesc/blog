@@ -24,7 +24,7 @@ export default async function ArticlePage({
           This article doesn&apos;t exist.
         </h1>
         <a
-          href="/articles"
+          href="/blog"
           className="underline decoration-sky-500 underline-offset-4 dark:decoration-sky-600"
         >
           Read something else

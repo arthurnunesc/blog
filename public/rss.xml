@@ -1,12 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title><![CDATA[Lukeberry Pi Blog]]></title>
+        <title><![CDATA[Arthur Nunes Blog]]></title>
         <description><![CDATA[This is my blog]]></description>
-        <link>https://lukeberrypi.vercel.app/</link>
+        <link>http://localhost:3000</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 12 Aug 2024 14:34:43 GMT</lastBuildDate>
-        <atom:link href="https://lukeberrypi.vercel.app//rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Wed, 01 Apr 2026 20:26:32 GMT</lastBuildDate>
+        <atom:link href="http://localhost:3000/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[How (not) to get a job in Spain]]></title>
+            <description><![CDATA[
+I flew to Italy to visit my Dad earlier this year. In that period, I also went to Málaga to see an old friend and to the UK to see my family.
+
+A day before going back to Brazil, I got an unexpected invite: my friend called me to live with him in Málaga. I cancelled my flight back home and two weeks later I was back in Spain.
+
+As I settled in, I realized that I had around a month to:
+
+- Find a job that sponsored a visa; or
+- Marry a European woman; or
+- Exit Europe
+
+Here is a timeline for one of the hiring processes I took part in.
+
+## Applying
+
+For the first time in my life, I successfully applied to a position via LinkedIn Easy Apply. I shared my CV with the recruiter, she sent a message and we scheduled a talk.
+
+This was a Frontend Developer hybrid position in Malaga, exactly what I was after.
+
+> Tip: I usually search for positions posted in the last 24h.
+
+## Recruiter Conversation
+
+This was 30 minutes where we went over introductions, some questions such as "Talk a bit about yourself and your professional experience"
+
+She asked how much experience I had with the stack (React, React Native, TypeScript and GraphQL). I mentioned that I had personal projects in production with TypeScript and React. Namely, my websites [css2wind](https://css2wind.com) and [phived](https://phived.com).
+
+> Tip: Ask a question. I default to "What is the size of the developer team?" or "What is the happy path for this hiring process?" (as in, if everything works out perfectly, what will happen).
+
+## Coding Assignment
+
+After the meeting ended, she sent me a coding assignment due in a week:
+
+- It was a JavaScript, React, and Redux Toolkit website
+- It had only one commit, with (frankly) pretty terrible code
+- I had to review the code as if it was a regular pull request. [Here is my review](https://gist.github.com/LukeberryPi/2833f7f21e2cb102c43bc6406db17749).
+- I had to refactor the code since the initial state wasn't functional
+
+I was also asked to implement three features:
+
+- Display movies in a grid and make it responsive
+- Implement infinite scroll for the Home and the Search page
+- Implement a modal to display the movie trailer
+
+This is [what I delivered](https://luke-berry-movieland.vercel.app).
+
+> Tip: Take home projects are about prioritizing correctly. Make the requirements work first. If you have time to spare, add enhancements.
+
+## Technical Interview
+
+For this stage I talked to two Software Engineers. There was no live coding or review of the code I delivered in the previous stage. They mentioned that they were impressed with the attention to detail of my delivery.
+
+It consisted mostly of questions about the technologies I worked with in the past, such as "what are the differences between React Context API and Redux?", while outlining strengths and downfalls of both approaches.
+
+I felt very comfortable with this since I had been studying a lot of React and Redux. Here are two resources:
+
+- [Redux Pros and Cons](https://www.reddit.com/r/reactjs/comments/1aiol7c/comment/kow7lbq/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+- [React Under the Hood](https://www.youtube.com/watch?v=i793Qm6kv3U&pp=ygUUcmVhY3QgdW5kZXIgdGhlIGhvb2Q%3D)
+
+> Tip: Search the people that will interview you. Look into their carrers, articles, and open source contributions.
+
+## Technical Interview II
+
+This stage took place with an Engineering Manager and focused on my experience with developer teams. She asked what industry and size of teams I had worked with and if I aspired to move into Fullstack or continue focusing solely on Frontend Development.
+
+She also asked "What was the last big technical mistake you made?". This question caught me off-guard, even though it is very common. Luckily, I make a lot of mistakes and comfortably shared the last time I had broken prod and what I did wrong.
+
+> Tip: Be prepared to talk about soft skills. Questions such as "What is a difficult professional situation and how did you overcome it?" should be rehearsed and ready.
+
+## Final Offer
+
+After a week, I got the positive feedback from the company and a final offer: €50000/year, with some perks:
+
+- Reduced work day during August (9-4 instead of 9-5)
+- Twenty days of "work from anywhere" per year
+- Cost assistance of €1500 per year
+
+I moved onto the onboarding: documentation, signing contracts, and more.
+
+> Tip: At this stage, always ask for a bigger salary than your expectation. You will never get disqualified for it. If you are participating in multiple hiring process, use that as leverage.
+
+## Bad Ending
+
+As the onboarding progressed, the elephant on the room was addressed: the Visa. As a Brazilian-British citizen, I am not allowed to work in Europe without it (thanks, Brexit!).
+
+The visa they were applying for me was a Highly Skilled Professional Visa, which is needed for a foreigner earning above €40000/year in Europe.
+
+A week went by, I signed more contracts and had more meetings. In one of these meetings, they disclosed to me that they couldn't hire me.
+
+Amongst other things, this Visa demands a University Degree. Or 3 years of proven experience in the field. Unfortunately, I had neither.
+
+Even though I have the years of experience, a lot of that is freelancing, which isn't valid for this Visa.
+
+I was heartbroken. I gathered myself to thank everyone involved and then exited gracefully. So close, yet so far.
+
+After I recovered, I had a big decision to make again:
+
+- Go back to Brazil and call it a day, after all I had already overstayed my welcome
+- Fly to the UK and try to find a job, since I wouldn't need a Visa to work there (I'm a British Citizen)
+
+I bought a ticket to the UK, with a few plans in mind.
+]]></description>
+            <link>http://localhost:3000/articles/how-not-to-get-a-job-in-spain</link>
+            <guid isPermaLink="true">http://localhost:3000/articles/how-not-to-get-a-job-in-spain</guid>
+            <pubDate>Sun, 15 Sep 2024 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Frontend Debugging 101]]></title>
             <description><![CDATA[
@@ -14,9 +122,9 @@ I believe the cliché "there are no dumb questions". I even created a [website](
 
 However, solving your own problems in software is the unlock for progress. The more you do it, the more errors you instantly recognize and the faster you will move.
 
-In my first programming job, I would often call colleagues in despair with errors in my code, only for them to solve it in seconds. Even though my questions weren't "dumb" _per se_, I felt silly since the solution was that simple.
+In my first programming job, I would often call colleagues in despair with errors in my code, only for them to solve it in seconds. Even though my questions weren't "dumb" _per se_, the solution was often trivial.
 
-If you're a beginner, you will face these situations a lot. It is completely natural,  and more experienced people won't mind. As long as you learn from your mistakes and don't repeat them.
+If you're a beginner, you will face these situations a lot. It is completely natural, and more experienced people won't mind. As long as you learn from your mistakes and don't repeat them.
 
 Here is a list of steps I take before asking other people for help. It will range from very simple to medium-effort steps for debugging. I also added my usual time spent with each step.
 
@@ -40,7 +148,7 @@ My favorite means to do this is X (formerly Twitter). Here is an example of [how
 
 It is said that the more code you copy, the more experienced you are. You might be attempting to write code that is very similar to other code in the same repository.
 
-Develop the habit of searching the codebase for the methods you are trying to implement. I do this with `⌘ + shift + f` on VS Code. And search for `useInfiniteQuery(`, for example.
+Develop the habit of searching the codebase for the methods you are trying to implement. I do this with `⌘ + shift + f` on VS Code. And search for `useInfiniteQuery()`, for example.
 
 ### Have you accessed the documentation? (~15 minutes)
 
@@ -111,7 +219,7 @@ Language Server Protocols (LSP) can be hard sometimes. If you are seeing uncommo
 
 I have created the habit of running the `TypeScript: Restart TS Server` command in VS Code every 15 minutes.
 
-### Have you reinstalled node_modules? (~1 minute)
+### Have you reinstalled node_modules? (∞)
 
 It is common for your `node_modules` to become corrupted. If the error looks unrelated to your changes, try it.
 
@@ -202,7 +310,7 @@ Here is a real example I wrote:
 This is called [rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging). And something magical will happen if you do it. You will either:
 
 - Think of an alternative that you haven't tried yet
-- Think of the solution immediately
+- Find the solution immediately
 
 If it doesn't happen...
 
@@ -223,9 +331,10 @@ This was my step-by-step guide for debugging common Frontend development issues.
 
 I am still learning and I don't know everything. This list may be useless if you work with something other than Frontend web development.
 
-If you are a beginner in Frontend, give this a try! You won't regret it.]]></description>
-            <link>https://lukeberrypi.vercel.app//articles/frontend-debugging-101</link>
-            <guid isPermaLink="true">https://lukeberrypi.vercel.app//articles/frontend-debugging-101</guid>
+If you are a beginner in Frontend, give this a try! You won't regret it.
+]]></description>
+            <link>http://localhost:3000/articles/frontend-debugging-101</link>
+            <guid isPermaLink="true">http://localhost:3000/articles/frontend-debugging-101</guid>
             <pubDate>Tue, 23 Jul 2024 00:00:00 GMT</pubDate>
         </item>
         <item>
@@ -248,7 +357,9 @@ Even if my first experience with Raycast wasn't convincing, I definitely saw the
 
 Still, out-of-the-box (OOTB) behavior plays a huge role on migrating to/from a similar tool. Most users won't have the patience to configure the new tool and will give up migrating altogether.
 
-I recently decided to give Raycast a second try. **Spoiler: I no longer use Alfred.** In this article I will explain why I came back, what I love and what I wish would change.
+I recently decided to give Raycast a second try. **Spoiler: I no longer use Alfred.**
+
+In this article I will explain why I came back, what I love and what I wish would change.
 
 ## Why I Tried it Again
 
@@ -312,11 +423,11 @@ It is impossible to setup hotkeys for Raycast using the "globe/fn" key. This wou
 
 Raycast is phenomenal. Huge shout out to [@peduarte](https://x.com/peduarte) and the team for developing such an impressive, all-encompassing application.
 
-As with any software, there are improvement points, but I wouldn't write about it to this length if I didn't love it! [Try it out yourself (MacOS only)](https://www.raycast.com/).
+As with any software, there are improvement points, but I wouldn't write about it to this length if I didn't love it! [Try it out yourself](https://www.raycast.com/).
 ]]></description>
-            <link>https://lukeberrypi.vercel.app//articles/raycast-second-impressions</link>
-            <guid isPermaLink="true">https://lukeberrypi.vercel.app//articles/raycast-second-impressions</guid>
-            <pubDate>Mon, 15 Jul 2024 00:00:00 GMT</pubDate>
+            <link>http://localhost:3000/articles/raycast-second-impressions</link>
+            <guid isPermaLink="true">http://localhost:3000/articles/raycast-second-impressions</guid>
+            <pubDate>Wed, 15 May 2024 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

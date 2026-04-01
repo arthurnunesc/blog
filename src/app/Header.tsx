@@ -85,7 +85,7 @@ export default function Header() {
             )}
           </button>
           <a
-            className="group relative rounded px-2 py-px sm:hover:ring-1 ring-sky-500 transition-transform dark:ring-sky-600"
+            className="group relative rounded px-2 py-px ring-sky-500 transition-transform sm:hover:ring-1 dark:ring-sky-600"
             href="https://github.com/arthurnunesc"
             target="_blank"
             aria-label="View projects"
@@ -93,19 +93,19 @@ export default function Header() {
             /projects
           </a>
           <Link
-            className="group relative rounded px-2 py-px sm:hover:ring-1 ring-sky-500 transition-transform dark:ring-sky-600"
-            href="/articles"
-            aria-label="View articles"
-            aria-current={path.startsWith("/articles") ? "page" : undefined}
+            className="group relative rounded px-2 py-px ring-sky-500 transition-transform sm:hover:ring-1 dark:ring-sky-600"
+            href="/blog"
+            aria-label="View blog"
+            aria-current={path.startsWith("/blog") ? "page" : undefined}
           >
-            /articles
+            /blog
             <Triangle
               aria-hidden="true"
               className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-aria-[current=page]:block dark:fill-sky-600 dark:text-transparent"
             />
           </Link>
           <Link
-            className="group relative rounded px-2 py-px sm:hover:ring-1 ring-sky-500 transition-transform dark:ring-sky-600"
+            className="group relative rounded px-2 py-px ring-sky-500 transition-transform sm:hover:ring-1 dark:ring-sky-600"
             href="/about"
             aria-label="View about page"
             aria-current={path === "/about" ? "page" : undefined}
