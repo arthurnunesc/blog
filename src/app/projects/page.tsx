@@ -1,9 +1,12 @@
 import { GitBranch, Globe } from "lucide-react";
+import Image from "next/image";
 import { ReactNode } from "react";
 
 interface Project {
   name: string;
   description: string;
+  imageUrl: string;
+  imageAlt: string;
   githubUrl: string;
   url?: string;
   technologies: ReactNode;
@@ -11,33 +14,28 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "Project One",
+    name: "StarScout Extension",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    githubUrl: "https://github.com/placeholder/project-one",
+      "Browser extension that shows percentage of GitHub stars that are suspected to not be legit using StarScout data.",
+    imageUrl: "/projects/starscout-extension.png",
+    imageAlt: "StarScout badge showing a suspected stars percentage on GitHub",
+    githubUrl: "https://github.com/arthurnunesc/starscout-extension",
     technologies: (
       <div className="flex flex-wrap items-center gap-3">
-        <span className="rounded-full bg-zinc-500 px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
-          Technology
+        <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
+          TypeScript
         </span>
-        <span className="rounded-full bg-zinc-500 px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
-          Framework
+        <span className="rounded-full bg-[#00D8FE] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit dark:ring-1 dark:ring-zinc-500">
+          React
         </span>
-      </div>
-    ),
-  },
-  {
-    name: "Project Two",
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.",
-    githubUrl: "https://github.com/placeholder/project-two",
-    technologies: (
-      <div className="flex flex-wrap items-center gap-3">
-        <span className="rounded-full bg-zinc-500 px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
-          Technology
+        <span className="rounded-full bg-[#7C3AED] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
+          WXT
         </span>
-        <span className="rounded-full bg-zinc-500 px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
-          Framework
+        <span className="rounded-full bg-[#009688] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
+          FastAPI
+        </span>
+        <span className="rounded-full bg-[#336791] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
+          PostgreSQL
         </span>
       </div>
     ),
@@ -47,19 +45,22 @@ const projects: Project[] = [
 function ProjectCard({
   name,
   description,
+  imageUrl,
+  imageAlt,
   githubUrl,
   url,
   technologies,
 }: Project) {
   return (
     <div className="flex-col divide-y divide-zinc-400 dark:divide-zinc-500 overflow-hidden rounded ring-1 dark:zinc-500 dark:ring-zinc-500 ring-zinc-400">
-      <div className="flex items-center justify-between gap-4 p-4 max-sm:flex-col">
-        <h2 className="text-xl">{name}</h2>
+      <div className="flex flex-col items-start gap-4 p-4">
+        <h2 className="text-2xl leading-tight">{name}</h2>
         {technologies}
       </div>
       <div>
         <p className="p-4">{description}</p>
       </div>
+      <Image src={imageUrl} width={1788} height={1012} alt={imageAlt} />
       <div className="flex w-full justify-between divide-x divide-zinc-400 dark:divide-zinc-500">
         {url && (
           <a
