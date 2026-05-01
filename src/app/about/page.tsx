@@ -17,7 +17,7 @@ export default function AboutPage() {
           I like to ride my bike and I was a Strava local legend on a segment
           near my place for a bit and will probably be mentioning it for a while.<br></br>
           At some point I got tired of routing apps
-          having wrong surface data, so I started working on <b>Gravel Sync</b>
+          having wrong surface data, so I am developing <b>Gravel Sync</b>
           , a mobile app for updating OpenStreetMap road conditions while
           you&apos;re out riding. <b>It&apos;s not out yet</b>.
         </p>
