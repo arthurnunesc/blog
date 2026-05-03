@@ -20,6 +20,7 @@ const projects: Project[] = [
     imageUrl: "/projects/starscout-extension.png",
     imageAlt: "StarScout badge showing a suspected stars percentage on GitHub",
     githubUrl: "https://github.com/arthurnunesc/starscout-extension",
+    url: "/starscout-extension",
     technologies: (
       <div className="flex flex-wrap items-center gap-3">
         <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
@@ -65,7 +66,7 @@ function ProjectCard({
         {url && (
           <a
             href={url}
-            target="_blank"
+            target={url.startsWith("http") ? "_blank" : undefined}
             className="flex grow items-center justify-center gap-2 py-4 transition-transform sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
           >
             <Globe strokeWidth={1.4} className="size-5" /> Visit website
