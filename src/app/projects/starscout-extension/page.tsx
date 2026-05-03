@@ -45,7 +45,7 @@ export default function StarScoutExtensionPage() {
           />
         </a>
         <Link
-          href="/starscout-extension/privacy"
+          href="/projects/starscout-extension/privacy"
           className="group flex items-center justify-between rounded p-4 ring-1 ring-zinc-400 transition-transform sm:hover:bg-zinc-100 dark:ring-zinc-500 sm:dark:hover:bg-zinc-800"
         >
           <span className="flex items-center gap-3">
@@ -110,7 +110,7 @@ export default function StarScoutExtensionPage() {
           identity, extension-specific user IDs, or private repository data.
         </p>
         <p>
-          See the <Link href="/starscout-extension/privacy">privacy policy</Link>{" "}
+          See the <Link href="/projects/starscout-extension/privacy">privacy policy</Link>{" "}
           for the full details.
         </p>
       </section>

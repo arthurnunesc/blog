@@ -20,7 +20,7 @@ const projects: Project[] = [
     imageUrl: "/projects/starscout-extension.png",
     imageAlt: "StarScout badge showing a suspected stars percentage on GitHub",
     githubUrl: "https://github.com/arthurnunesc/starscout-extension",
-    url: "/starscout-extension",
+    url: "/projects/starscout-extension",
     technologies: (
       <div className="flex flex-wrap items-center gap-3">
         <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">

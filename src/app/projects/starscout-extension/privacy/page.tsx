@@ -12,7 +12,7 @@ export default function StarScoutPrivacyPage() {
   return (
     <article>
       <header className="mt-4 space-y-4">
-        <Link href="/starscout-extension" className="inline-flex items-center gap-2">
+        <Link href="/projects/starscout-extension" className="inline-flex items-center gap-2">
           <ChevronLeft strokeWidth={1.4} className="size-4" />
           Back to extension landing page
         </Link>
