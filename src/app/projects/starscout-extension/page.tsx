@@ -64,7 +64,7 @@ export default function StarScoutExtensionPage() {
           <li>
             Detects <strong>public</strong> GitHub repository pages.
           </li>
-          <li>Sends only the public owner/repo identifier to the API.</li>
+          <li>Sends only a recognized public owner/repo identifier to the API.</li>
           <li>Shows aggregate suspected non-legit star metrics when available.</li>
           <li>Shows a neutral not-analyzed state when the dataset has no row.</li>
         </ul>
@@ -84,7 +84,7 @@ export default function StarScoutExtensionPage() {
       <section>
         <h2>What the popover shows</h2>
         <ul>
-          <li>Current GitHub stars.</li>
+          <li>Current GitHub stars when available.</li>
           <li>Suspected non-legit stars.</li>
           <li>Estimated legitimate stars.</li>
           <li>Low-activity, lockstep, and overlap breakdowns.</li>
@@ -96,7 +96,8 @@ export default function StarScoutExtensionPage() {
         <h2>Privacy posture</h2>
         <p>
           The extension does not collect GitHub credentials, GitHub account
-          identity, extension-specific user IDs, or private repository data.
+          identity, extension-specific user IDs, or private repository names or
+          contents.
         </p>
         <p>
           See the <Link href="/projects/starscout-extension/privacy">privacy policy</Link>{" "}

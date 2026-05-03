@@ -37,13 +37,13 @@ export default function StarScoutPrivacyPage() {
         <h2>Data The Extension Collects And Sends</h2>
         <p>
           When you visit a public GitHub repository page that the extension
-          recognizes, the extension sends the following information to the
-          StarScout API:
+          recognizes as public, the extension sends the following information
+          to the StarScout API:
         </p>
         <ul>
           <li>
-            The public GitHub repository identifier currently being viewed, such
-            as <code>owner/repo</code>.
+            The public GitHub repository identifier currently being viewed,
+            such as <code>owner/repo</code>.
           </li>
           <li>
             Standard browser request metadata automatically sent by the browser
@@ -57,41 +57,64 @@ export default function StarScoutPrivacyPage() {
         <p>The extension does not collect or send any of the following:</p>
         <ul>
           <li>GitHub credentials, tokens, or passwords.</li>
-          <li>GitHub username or account identity.</li>
+          <li>GitHub username or account identity, which the service does not receive.</li>
           <li>Extension-specific user identifiers.</li>
-          <li>Private repository contents or private repository names.</li>
+          <li>Private repository names or contents.</li>
           <li>Suspected actor-level stargazer identities.</li>
         </ul>
       </section>
 
       <section>
         <h2>How The API Uses Data</h2>
-        <p>
-          The API uses the public <code>owner/repo</code> identifier to return
-          aggregate StarScout-derived suspected non-legit star metrics for that
-          repository. Responses are repo-level aggregates only and do not expose
-          suspected actor lists.
-        </p>
-        <p>
-          The API may also fetch current public repository metadata from GitHub,
-          such as the current <code>stargazers_count</code>, to compute the
-          displayed percentage denominator.
-        </p>
+        <ol>
+          <li>
+            The extension sends the public <code>owner/repo</code> identifier for
+            the repository being viewed.
+          </li>
+          <li>
+            The API uses that identifier to look up aggregate StarScout-derived
+            suspected non-legit star metrics for that repository.
+          </li>
+          <li>
+            The API tries to fetch current public repository metadata from
+            GitHub, such as the current <code>stargazers_count</code>, to compute
+            the displayed percentage denominator when available.
+          </li>
+          <li>
+            The API returns repo-level aggregates only and does not expose
+            suspected actor lists.
+          </li>
+        </ol>
       </section>
 
       <section>
         <h2>Logs And Retention</h2>
-        <p>
-          The backend logs operational data to support availability, debugging,
-          abuse prevention, and rate limiting. Because the repository name is
-          part of the API path, access logs from the API host, reverse proxy, or
-          container platform may contain public <code>owner/repo</code> paths.
-        </p>
-        <p>
-          Operational logs are retained only as long as necessary for the
-          purposes described above. The project does not intentionally retain
-          long-lived per-user browsing history.
-        </p>
+        <ul>
+          <li>
+            The backend application does not implement its own request-log
+            storage or log-retention system.
+          </li>
+          <li>
+            Normal Uvicorn, container, or platform access logs are written
+            temporarily for availability, debugging, abuse prevention, and rate
+            limiting.
+          </li>
+          <li>
+            Because the public repository name is part of the API path, those
+            temporary logs include public <code>owner/repo</code> paths, IP
+            address, and user agent metadata automatically sent with the request.
+          </li>
+          <li>
+            The project does not keep long-term request logs or create user
+            profiles. The service does not receive GitHub account identity or
+            extension-specific identifiers at all.
+          </li>
+          <li>
+            The service has no persisted browsing history table and no persistent
+            identifier it can use to track a person&apos;s GitHub browsing history
+            over time.
+          </li>
+        </ul>
       </section>
 
       <section>
@@ -99,7 +122,10 @@ export default function StarScoutPrivacyPage() {
         <p>
           This project does not sell user data. The API is designed to return
           aggregate public-repository metrics and does not require accounts,
-          login, or payment. User data is not shared with third parties.
+          login, or payment. The backend tries to query GitHub for public
+          repository metadata needed to provide the feature, but it does not
+          have access to GitHub account identity or extension-specific
+          identifiers to share.
         </p>
       </section>
 

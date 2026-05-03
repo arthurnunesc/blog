@@ -16,7 +16,7 @@ const projects: Project[] = [
   {
     name: "StarScout Extension",
     description:
-      "Browser extension that shows percentage of GitHub stars that are suspected to not be legit using StarScout data.",
+      "Browser extension that shows heuristic suspected non-legit star signals on public GitHub repositories.",
     imageUrl: "/projects/starscout-extension.png",
     imageAlt: "StarScout badge showing a suspected stars percentage on GitHub",
     githubUrl: "https://github.com/arthurnunesc/starscout-extension",
