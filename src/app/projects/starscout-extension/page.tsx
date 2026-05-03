@@ -61,7 +61,9 @@ export default function StarScoutExtensionPage() {
       <section>
         <h2>What it does</h2>
         <ul>
-          <li>Detects public GitHub repository pages.</li>
+          <li>
+            Detects <strong>public</strong> GitHub repository pages.
+          </li>
           <li>Sends only the public owner/repo identifier to the API.</li>
           <li>Shows aggregate suspected non-legit star metrics when available.</li>
           <li>Shows a neutral not-analyzed state when the dataset has no row.</li>
@@ -87,19 +89,6 @@ export default function StarScoutExtensionPage() {
           <li>Estimated legitimate stars.</li>
           <li>Low-activity, lockstep, and overlap breakdowns.</li>
           <li>Dataset cutoff date and attribution.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Scope</h2>
-        <ul>
-          <li>Supports public <code>github.com/owner/repo</code> pages.</li>
-          <li>Does not support private repositories.</li>
-          <li>Does not support GitHub Enterprise Server.</li>
-          <li>
-            Shows missing StarScout aggregate data as not analyzed, not as zero
-            suspected stars.
-          </li>
         </ul>
       </section>
 
