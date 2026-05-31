@@ -4,14 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run generate:rss && next build",
     "start": "next start",
     "lint": "next lint",
     "generate:rss": "node src/scripts/gen-rss.js"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^9.5.0",
-    "@vercel/analytics": "^1.5.0",
     "dotenv": "^16.4.5",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.395.0",

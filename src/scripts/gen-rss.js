@@ -6,7 +6,7 @@ const dotenv = require("dotenv");
 
 dotenv.config({ path: ".env.local" });
 
-console.log("SITE_URL:", process.env.VERCEL_PROJECT_PRODUCTION_URL);
+console.log("SITE_URL:", getSiteUrl());
 
 const postsDirectory = path.join(process.cwd(), "src", "articles");
 
@@ -29,8 +29,7 @@ function getPosts() {
 }
 
 function generateRSS() {
-  const siteUrl =
-    process.env.VERCEL_PROJECT_PRODUCTION_URL || "http://localhost:3000";
+  const siteUrl = getSiteUrl();
   const feedUrl = `${siteUrl}/rss.xml`;
 
   const feed = new RSS({
@@ -54,6 +53,15 @@ function generateRSS() {
 
   const rss = feed.xml({ indent: true });
   fs.writeFileSync(path.join(process.cwd(), "public", "rss.xml"), rss);
+}
+
+function getSiteUrl() {
+  return (
+    process.env.SITE_URL ||
+    process.env.URL ||
+    process.env.DEPLOY_PRIME_URL ||
+    "http://localhost:3000"
+  );
 }
 
 generateRSS();
